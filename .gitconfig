@@ -1,0 +1,14 @@
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        ui = true
+[push]
+        default = simple
+[user]
+        nmae = Patrick Marx
+        name = Patrick Marx
+        email = patrick.k.marx@gmail.com
+[alias]
+        up = !git pull --rebase=preserve origin \"$(git rev-parse --abbrev-ref HEAD)\"
+        log-diff = !sh -c 'git log `git merge-base $1 $2`..$2' -
